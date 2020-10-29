@@ -9,4 +9,4 @@ Templates followed:
 * https://github.com/aws/amazon-sagemaker-examples/blob/master/introduction_to_amazon_algorithms/lda_topic_modeling/LDA-Introduction.ipynb
 * https://github.com/XuanX111/Friends_text_generator/blob/master/Friends_LDAvis_Xuan_Qi.ipynb
 * https://towardsdatascience.com/nlp-extracting-the-main-topics-from-your-dataset-using-lda-in-minutes-21486f5aa925
-
+* https://github.com/priya-dwivedi/Deep-Learning/blob/master/topic_modeling/LDA_Newsgroup.ipynb
