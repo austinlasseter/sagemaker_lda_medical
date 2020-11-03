@@ -11,3 +11,4 @@ Templates followed:
 * https://towardsdatascience.com/nlp-extracting-the-main-topics-from-your-dataset-using-lda-in-minutes-21486f5aa925
 * https://github.com/priya-dwivedi/Deep-Learning/blob/master/topic_modeling/LDA_Newsgroup.ipynb
 * https://alexandersimes.com/unsupervised/machine/learning/nlp/sagemaker/2019/09/01/got.html
+* https://github.com/aws/amazon-sagemaker-examples/blob/master/scientific_details_of_algorithms/lda_topic_modeling/LDA-Science.ipynb
