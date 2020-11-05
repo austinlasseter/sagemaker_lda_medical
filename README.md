@@ -12,3 +12,5 @@ Templates followed:
 * https://github.com/priya-dwivedi/Deep-Learning/blob/master/topic_modeling/LDA_Newsgroup.ipynb
 * https://alexandersimes.com/unsupervised/machine/learning/nlp/sagemaker/2019/09/01/got.html
 * https://github.com/aws/amazon-sagemaker-examples/blob/master/scientific_details_of_algorithms/lda_topic_modeling/LDA-Science.ipynb
+* https://www.machinelearningplus.com/nlp/topic-modeling-visualization-how-to-present-results-lda-models/#6.-What-is-the-Dominant-topic-and-its-percentage-contribution-in-each-document
+* https://www.kaggle.com/ykhorramz/lda-and-t-sne-interactive-visualization
