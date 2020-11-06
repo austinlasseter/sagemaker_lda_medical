@@ -14,3 +14,4 @@ Templates followed:
 * https://github.com/aws/amazon-sagemaker-examples/blob/master/scientific_details_of_algorithms/lda_topic_modeling/LDA-Science.ipynb
 * https://www.machinelearningplus.com/nlp/topic-modeling-visualization-how-to-present-results-lda-models/#6.-What-is-the-Dominant-topic-and-its-percentage-contribution-in-each-document
 * https://www.kaggle.com/ykhorramz/lda-and-t-sne-interactive-visualization
+* https://www.machinelearningplus.com/nlp/topic-modeling-gensim-python/#17howtofindtheoptimalnumberoftopicsforlda

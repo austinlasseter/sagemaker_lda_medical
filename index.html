@@ -51,6 +51,7 @@ body {font-family: Arial;}
 <div class="tab">
   <button class="tablinks" onclick="openCity(event, 'London')">Overview</button>
   <button class="tablinks" onclick="openCity(event, 'Paris')">Exploratory Analysis</button>
+  <button class="tablinks" onclick="openCity(event, 'Rome')">Keywords</button>
   <button class="tablinks" onclick="openCity(event, 'Tokyo')">Surgery</button>
   <button class="tablinks" onclick="openCity(event, 'NewYork')">Consultations</button>
   <button class="tablinks" onclick="openCity(event, 'Boston')">Heart & Lungs</button>
@@ -60,24 +61,28 @@ body {font-family: Arial;}
 <div id="London" class="tabcontent">
   <h3>London</h3>
   <p>London is the capital city of England.</p>
-    <h1>The iframe element</h1>
-    <iframe src="https://armyjbooks.s3.amazonaws.com/monkeys.html" width="100%" height="950" style="border:1px solid black;">
-    </iframe>
-    <h1>The iframe element</h1>
+  <a href="https://github.com/austinlasseter/sagemaker_lda_medical">github repository</a><br>
+
+  <a href="https://www.kaggle.com/tboyle10/medicaltranscriptions">data source</a>
+
+
 </div>
 
 <div id="Paris" class="tabcontent">
   <h3>Medical Specialties</h3>
   <p>Paris is the capital of France.</p>
-  <iframe src="cat10.html" width="100%" height="950" style="border:1px solid black;">
-  </iframe>
-  <h3>Keywords</h3>
-  <p>Paris is the capital of France.</p>
-  <iframe src="keywords.html" width="100%" height="950" style="border:1px solid black;">
+  <iframe src="cat10.html" width="100%" height="500" style="border:1px solid black;">
   </iframe>
   <h3>Boxplots</h3>
   <p>Boxplots</p>
-  <iframe src="boxplots.html" width="100%" height="950" style="border:1px solid black;">
+  <iframe src="boxplots.html" width="100%" height="500" style="border:1px solid black;">
+  </iframe>
+</div>
+
+<div id="Rome" class="tabcontent">
+  <h3>Keywords</h3>
+  <p>Paris is the capital of France.</p>
+  <iframe src="keywords.html" width="100%" height="950" style="border:1px solid black;">
   </iframe>
 </div>
 
