@@ -15,6 +15,7 @@ Templates followed:
 * https://www.machinelearningplus.com/nlp/topic-modeling-visualization-how-to-present-results-lda-models/#6.-What-is-the-Dominant-topic-and-its-percentage-contribution-in-each-document
 * https://www.kaggle.com/ykhorramz/lda-and-t-sne-interactive-visualization
 * https://www.machinelearningplus.com/nlp/topic-modeling-gensim-python/#17howtofindtheoptimalnumberoftopicsforlda
+* https://rare-technologies.com/what-is-topic-coherence/
 
 
 Link to previous proposal review:

@@ -52,9 +52,8 @@ body {font-family: Arial;}
   <button class="tablinks" onclick="openCity(event, 'London')">Overview</button>
   <button class="tablinks" onclick="openCity(event, 'Paris')">Exploratory Analysis</button>
   <button class="tablinks" onclick="openCity(event, 'Rome')">Keywords</button>
-  <button class="tablinks" onclick="openCity(event, 'Tokyo')">Surgery</button>
-  <button class="tablinks" onclick="openCity(event, 'NewYork')">Consultations</button>
-  <button class="tablinks" onclick="openCity(event, 'Boston')">Heart & Lungs</button>
+  <button class="tablinks" onclick="openCity(event, 'New York')">Model Comparison</button>
+  <button class="tablinks" onclick="openCity(event, 'Tokyo')">Final Model</button>
 
 </div>
 
@@ -71,47 +70,43 @@ body {font-family: Arial;}
 <div id="Paris" class="tabcontent">
   <h3>Medical Specialties</h3>
   <p>Paris is the capital of France.</p>
-  <iframe src="cat10.html" width="100%" height="500" style="border:1px solid black;">
+  <iframe src="html_files/cat10.html" width="100%" height="500" style="border:1px solid black;">
   </iframe>
   <h3>Boxplots</h3>
   <p>Boxplots</p>
-  <iframe src="boxplots.html" width="100%" height="500" style="border:1px solid black;">
+  <iframe src="html_files/boxplots.html" width="100%" height="500" style="border:1px solid black;">
   </iframe>
 </div>
 
 <div id="Rome" class="tabcontent">
   <h3>Keywords</h3>
   <p>Paris is the capital of France.</p>
-  <iframe src="keywords.html" width="100%" height="950" style="border:1px solid black;">
+  <iframe src="html_files/keywords.html" width="100%" height="950" style="border:1px solid black;">
   </iframe>
 </div>
+
+<div id="New York" class="tabcontent">
+  <h3>Model Comparison</h3>
+  <p>Compare models</p>
+  <iframe src="html_files/coherence_scores.html" width="100%" height="500" style="border:1px solid black;">
+  </iframe>
+  <h3>Boxplots</h3>
+  <p>Boxplots</p>
+  <iframe src="html_files/compare_models.html" width="100%" height="500" style="border:1px solid black;">
+  </iframe>
+</div>
+
+
 
 <div id="Tokyo" class="tabcontent">
   <h3>Tokyo</h3>
   <p>Tokyo is the capital of Japan.</p>
   <h1>The iframe element</h1>
-  <iframe src="surgery.html" width="100%" height="950" style="border:1px solid black;">
+  <iframe src="html_files/surgery.html" width="100%" height="950" style="border:1px solid black;">
   </iframe>
   <h1>The iframe element</h1>
 </div>
 
-<div id="NewYork" class="tabcontent">
-  <h3>Tokyo</h3>
-  <p>Tokyo is the capital of Japan.</p>
-  <h1>The iframe element</h1>
-  <iframe src="consult.html" width="100%" height="950" style="border:1px solid black;">
-  </iframe>
-  <h1>The iframe element</h1>
-</div>
-
-<div id="Boston" class="tabcontent">
-  <h3>Tokyo</h3>
-  <p>Tokyo is the capital of Japan.</p>
-  <h1>The iframe element</h1>
-  <iframe src="cardio.html" width="100%" height="950" style="border:1px solid black;">
-  </iframe>
-  <h1>The iframe element</h1>
-</div>
 
 
 <script>
