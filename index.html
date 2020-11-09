@@ -45,7 +45,7 @@ body {font-family: Arial;}
 </head>
 <body>
 
-<h2>Tabs</h2>
+<h2>Topic Clustering with Medical Transcripts</h2>
 <p>Click on the buttons inside the tabbed menu:</p>
 
 <div class="tab">
@@ -58,8 +58,26 @@ body {font-family: Arial;}
 </div>
 
 <div id="London" class="tabcontent">
-  <h3>London</h3>
-  <p>London is the capital city of England.</p>
+  <h3>Topic Modeling with Medical Transcripts Data</h3>
+  <p>
+
+
+  This capstone project uses machine learning methods to explore a dataset of medical transcripts. The exploration of medical data is one of the fastest growing fields in technology and especially in machine learning and data science. Technological advances in handling and analysis medical data can provide meaningful advances to improve healthcare and well-being. But a great deal of medical information is often locked up in text data, making it difficult to analyze. Traditionally, text from medical transcriptions required a human reader to review and summarize information. Now, thanks to Natural Language Processing (NLP) methods, it is possible to automatically review and summarize large amounts of medical text data.
+
+  Topic modeling is a strong approach for this field because it does not require labeled data; it is an unsupervised method that clusters documents according to similarity, and extracts key terms.
+
+  The data source for this analysis comes from Kaggle. It includes several thousand rows of medical transcription data scraped from the website `mtsamples.com`. Medical data most of the time is very hard to find due to HIPAA privacy regulations which protect individuals. This dataset offers medical transcription samples that have been anonymized, stripping all personally identifiable information so that they can be publicly released for analysis. This dataset contains sample medical transcriptions for various medical specialties.
+
+
+  The analysis tackles a common problem faced by medical agencies, which is the need to rapidly process and categorize large amounts of medical transcripts that have no labels. Typically after an appointment, consultation or surgery, the medical practitioner takes the time to record a summary of the activities completed in text form. The transcript is saved but often it is not processed or tagged appropriately, making it difficult to analyze further or group with similar transcripts.
+
+  The purpose of this analysis is to provide a machine learning method for clustering unlabeled transcripts into similar topic clusters, identified by keywords. The LDA model can allow a practitioner to quickly summarize thousands of transcripts, and to accurately classify new transcripts as they come in.
+
+  In my analysis, I began with a benchmark model and then compared it to six other models with regard to coherence, perplexity and accuracy.
+
+
+
+  </p>
   <a href="https://github.com/austinlasseter/sagemaker_lda_medical">github repository</a><br>
 
   <a href="https://www.kaggle.com/tboyle10/medicaltranscriptions">data source</a>
@@ -69,29 +87,29 @@ body {font-family: Arial;}
 
 <div id="Paris" class="tabcontent">
   <h3>Medical Specialties</h3>
-  <p>Paris is the capital of France.</p>
+  <p>The transcripts are clustered according to a large number of medical specialties. The great majority of the transcripts are from "Surgery." Other common categories were "Consultation" and "Cardio-Pulmonary." </p>
   <iframe src="html_files/cat10.html" width="100%" height="500" style="border:1px solid black;">
   </iframe>
   <h3>Boxplots</h3>
-  <p>Boxplots</p>
+  <p>The Surgery transcripts were about average compared to the other specialty transcripts. They had a median length of 2,761 characters, and outliers as large as 12K characters.</p>
   <iframe src="html_files/boxplots.html" width="100%" height="500" style="border:1px solid black;">
   </iframe>
 </div>
 
 <div id="Rome" class="tabcontent">
   <h3>Keywords</h3>
-  <p>Paris is the capital of France.</p>
+  <p>The dataset includes a column of keywords extracted from the transcripts; these are not the same for every row. Using a simple count vectorizer technique, I extracted the list of keywords and their frequency across each medical specialty. I also eliminated any keywords that were the same as the specialty itself -- for example, "surgery" was the most common word in the "Surgery" specialty. The top 10 keywords for the surgery specialty are shown in the graphic below. Of these, "artery" appears over 150 times. These words are a good indicator of the topics that I would extract from the transcripts using LDA.</p>
   <iframe src="html_files/keywords.html" width="100%" height="950" style="border:1px solid black;">
   </iframe>
 </div>
 
 <div id="New York" class="tabcontent">
   <h3>Model Comparison</h3>
-  <p>Compare models</p>
+  <p>Using a python forloop, I iterated through 7 different models to find the optimal number of topic clusters. I compared each model using accuracy and coherence score. The best model had 9 topics. This model had a coherence score of 45% and a classification accuracy of 73%, which outperformed any of the other models.</p>
   <iframe src="html_files/coherence_scores.html" width="100%" height="500" style="border:1px solid black;">
   </iframe>
-  <h3>Boxplots</h3>
-  <p>Boxplots</p>
+
+  <p>Classification accuracy with multinomial naive bayes. The final model included 9 topics.</p>
   <iframe src="html_files/compare_models.html" width="100%" height="500" style="border:1px solid black;">
   </iframe>
 </div>
@@ -99,9 +117,10 @@ body {font-family: Arial;}
 
 
 <div id="Tokyo" class="tabcontent">
-  <h3>Tokyo</h3>
-  <p>Tokyo is the capital of Japan.</p>
-  <h1>The iframe element</h1>
+  <h3>Topic Clusters</h3>
+  <p>There were ultimately 9 topics in the final model, all drawn from the Surgery specialty of transcripts. Below is an image of the first and largest topic, which includes words like "knee", "bone", "femoral", and "carpal" -- suggesting that most of the transcripts in this topic related to joint and leg surgery (a common procedure). It's notable that nearly all transcripts with the word "knee" (about 250) are clustered into this topic
+  Likewise, topic 2 includes keywords such as "suture," "tube", "needle," and "vicryl" (which is a rebsorbable, synthetic suture). These words indicate elements associated with a wide variety of surgery procedures, and were indicative of transcripts associated with topic 1</p>
+  <p>The topics can be easily explained in human terms. For example, Topic 3 seems to have words associated with heart surgery: it includes words like "artery", "catheter", "coronary", "vein", and "aortic". About 900 of the 1000 transcripts with the word "artery" fall into this topic.</p>
   <iframe src="html_files/surgery.html" width="100%" height="950" style="border:1px solid black;">
   </iframe>
   <h1>The iframe element</h1>
