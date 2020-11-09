@@ -1,5 +1,7 @@
 # SageMaker LDA Medical
-Using the LDA algorithm on SageMaker to extract topics from medical transcriptions data
+
+RESULTS OF THE FINAL MODEL CAN BE VIEWED HERE:
+* http://sagemaker-lda-medical.s3-website-us-east-1.amazonaws.com/
 
 Data source:
 * https://www.kaggle.com/tboyle10/medicaltranscriptions
