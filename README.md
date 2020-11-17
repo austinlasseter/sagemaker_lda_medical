@@ -1,9 +1,20 @@
 # SageMaker LDA Medical
-Using the LDA algorithm on SageMaker to extract topics from medical transcriptions data
+
+RESULTS OF THE FINAL MODEL CAN BE VIEWED HERE:
+* http://sagemaker-lda-medical.s3-website-us-east-1.amazonaws.com/
 
 Data source:
 * https://www.kaggle.com/tboyle10/medicaltranscriptions
 * Medical transcription data scraped from mtsamples.com
+
+Python libraries used:
+* pandas
+* scikit learn
+* gensim
+* boto3
+* plotly
+* pyLDAvis
+
 
 Templates followed:
 * https://github.com/aws/amazon-sagemaker-examples/blob/master/introduction_to_amazon_algorithms/lda_topic_modeling/LDA-Introduction.ipynb
@@ -15,6 +26,7 @@ Templates followed:
 * https://www.machinelearningplus.com/nlp/topic-modeling-visualization-how-to-present-results-lda-models/#6.-What-is-the-Dominant-topic-and-its-percentage-contribution-in-each-document
 * https://www.kaggle.com/ykhorramz/lda-and-t-sne-interactive-visualization
 * https://www.machinelearningplus.com/nlp/topic-modeling-gensim-python/#17howtofindtheoptimalnumberoftopicsforlda
+* https://rare-technologies.com/what-is-topic-coherence/
 
 
 Link to previous proposal review:
